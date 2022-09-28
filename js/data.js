@@ -34,3 +34,29 @@ const qnaList = [
 
 
 ];
+
+
+
+const resultList = [
+     {animal: '사자',
+      maxN: 20,
+      minN: 16
+     }
+    ,
+    {
+     animal: '늑대',
+     maxN: 15,
+     minN: 11
+    },
+    {
+     animal:'토끼',
+      maxN: 11,
+     minN: 6
+    }
+    ,
+    {
+     animal:'거북이',
+     maxN: 5,
+     minN: 1 
+    }
+];
