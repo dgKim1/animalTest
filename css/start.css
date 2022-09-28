@@ -1,0 +1,16 @@
+/* 시작화면의 css스타일 입니다.*/
+#start{
+    background-color: burlywood;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Cute Font',cursive;
+}
+#startBttn{
+    text-align: center;
+    background-color:lightgray;/*버튼 클릭시-->#0dcaf0b8*/
+    border-radius: 20px;
+}
+p{
+    font-size: 20px;
+}

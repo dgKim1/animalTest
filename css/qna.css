@@ -1,0 +1,27 @@
+#qna{
+    display: none;
+}
+
+.qBox{
+    text-align: center;
+    font-size: 20px; 
+    background-color: lightblue;
+    border-radius: 20px;
+    width: 80%;
+    border: 0px;
+    
+}
+
+.answerList {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    display: block;
+    width: 80%;
+    border: 0px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+.answerList:hover,.answerList:focus{
+    background-color: lightblue;
+    color:whitesmoke;
+}
