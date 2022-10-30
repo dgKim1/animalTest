@@ -1,8 +1,27 @@
 #result{
     display: none;
+    background-color: whitesmoke;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Cute Font', cursive;
+    
 }
 
 #resultName{
-    font-size: 20px;
+    font-size: 30px;
     background-color: whitesmoke;
+}
+
+
+#restart{
+    text-align: center;
+    background-color:lightgray;
+    border-radius: 20px;
+}
+
+#kakao{
+    text-align: center;
+    background-color:lightgray;
+    border-radius: 20px;
 }

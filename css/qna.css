@@ -1,7 +1,9 @@
 #qna{
     display: none;
+    font-family: 'Cute Font', cursive;
 }
 
+    
 .qBox{
     text-align: center;
     font-size: 20px; 
