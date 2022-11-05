@@ -7,6 +7,14 @@
     font-family: 'Cute Font', cursive;
     
 }
+#kakaoResult{
+    background-color: whitesmoke;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Cute Font', cursive;
+}
+
 
 #resultName{
     font-size: 30px;

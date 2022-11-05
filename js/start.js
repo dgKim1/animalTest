@@ -81,7 +81,7 @@ function result(){/*총합 점수에 알맞은 동물을 화면에 결과로 보
     var classImg = document.createElement('img');
     var imgURL = "img/" + resultList[num].nameP;
     classImg.src = imgURL;
-    classImg.alt = 'img-'+num;
+    classImg.alt = num;
     classImg.classList.add('img-fluid');
     resultImg.appendChild(classImg);
     var animalN = resultList[num].animal;

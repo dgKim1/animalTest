@@ -36,7 +36,7 @@ const qnaList = [
 
 const resultList = [
      {animal: '<동물들의 왕 사자>',
-      about: ' 당신은 매우 독립적이며 무리를 주도적으로 이끈는 것을 좋아하며 강단있는 사람입니다.',
+      about: ' 당신은 매우 독립적이며 사람들을 주도적으로 이끄는 것을 좋아하며 리더쉽이 강한 사람입니다.',
       nameP: 'lion.png',
       src: '<a href="https://kr.freepik.com/free-vector/_23104906.htm#query=%EC%82%AC%EC%9E%90%20%EC%BA%90%EB%A6%AD%ED%84%B0&position=6&from_view=search&track=sph">작가 catalyststuff</a> 출처 Freepik'
      }
@@ -49,7 +49,7 @@ const resultList = [
     },
     {
      animal:'<평화주의자 토끼>',
-     about: '당신은 눈치가 빠르며 다른 사람들에게 피해주는 것을 매우 싫어하고 평화를 사랑하는 사람입니다. ',
+     about: '당신은 눈치가 빠르며 다른 사람들에게 피해주는 것을 매우 싫어하고 평화를 사랑하는 사람입니다.',
      nameP: 'rabbit.png',
      src: '<a href="https://kr.freepik.com/free-vector/cute-rabbit-holding-carrot-with-thumb-up-cartoon-vector-icon-illustration-animal-nature-isolated_26259308.htm#query=%EA%B7%80%EC%97%AC%EC%9A%B4%20%ED%86%A0%EB%81%BC&position=16&from_view=keyword">작가 catalyststuff</a> 출처 Freepik'
     }
