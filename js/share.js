@@ -7,14 +7,14 @@ function kakaoShare(){
     const shareName = resultList[resultAlt].nameP;
     const shareImage = url + 'img/' + shareName;
     const shareURL = url + 'page/result-' + resultAlt + '.html';
-    const about = resultList[resultAlt].about;
+    const about = resultList[resultAlt].animal;
+    console.log(shareImage);
     Kakao.Share.sendDefault({
       objectType: 'feed',
       content: {
         title: shareTitle,
         description: about,
-        imageUrl:
-          shareImage,
+        imageUrl: shareImage,
         link: {
           mobileWebUrl: shareURL,
           webUrl: shareURL
