@@ -21,15 +21,31 @@
     background-color: whitesmoke;
 }
 
+#resultBttn{
+    text-align: center;
+    border-radius: 20px;
+    background-color: mediumseagreen;
+    color:white;
+}
+#resultBttn:hover,#resultBttn:focus{
+    background-color: white;
+    color:mediumseagreen;
+}
 
 #restart{
     text-align: center;
     background-color:lightgray;
     border-radius: 20px;
 }
+#restart:focus,#restart:hover{
+    background-color: white;
+}
 
 #kakao{
     text-align: center;
     background-color:lightgray;
     border-radius: 20px;
+}
+#kakao:focus,#kakao:hover{
+    background-color: white;
 }

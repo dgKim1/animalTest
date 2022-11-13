@@ -6,14 +6,20 @@
     border-radius: 20px;
     font-family: 'Cute Font',cursive;
 }
-#startBttn{
+#sBttn{
     text-align: center;
-    background-color:lightgray;/*버튼 클릭시-->#0dcaf0b8*/
+    /*버튼 클릭시-->#0dcaf0b8*/
+    background-color: lightgray;
+    color: black;
     border-radius: 20px;
+    
 }
-/*#startImg{
-    border-radius: 20px;
-}*/
+#sBttn:hover,#sBttn:focus{
+    background-color: white;
+    color: burlywood;
+    
+}
+
 p{
     font-size: 20px;
 }

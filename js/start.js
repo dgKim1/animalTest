@@ -1,20 +1,31 @@
 const start = document.querySelector("#start");
 const qna = document.querySelector("#qna");
 const res = document.querySelector("#result");
+const resultN = document.querySelector("#resultName");
+const src = document.querySelector("#src");
+const resultImg = document.querySelector("#resultImg");
+
+
 
 var animals = [['사자',0],['강아지',0],['토끼',0],['거북이',0]];
+
 
 function restart(){
     /*재시작 버튼*/
     start.style.display = "block";
     qna.style.display = "none";
+    resultN.innerHTML = "";
+    src.innerHTML = "";
+    resultImg.innerHTML = "";
     res.style.display = "none";
+
     animals = [['사자',0],['강아지',0],['토끼',0],['거북이',0]];/*점수총합*/
 
 }
 
 function startBttn() {
     /*시작하기 버튼을 눌렀을때 구현되는 함수*/
+    
     start.style.display = "none";
     qna.style.display = "block";
     let pg = 0;
@@ -38,6 +49,7 @@ function addA(idx, ansText,pg) {
     var aBox = document.querySelector(".aBox"); 
     var aBttn = document.createElement("Button");
     aBttn.classList.add("answerList");
+    aBttn.classList.add("fadeIn");
     aBttn.classList.add("mx-auto");
     aBttn.classList.add("my-3");
     aBttn.classList.add("py-3");
@@ -50,23 +62,20 @@ function addA(idx, ansText,pg) {
         countAnimals(select);
         for (let i = 0 ;i < ans.length;i++){
             ans[i].disabled = true;
-            ans[i].style.animation = "fadeOut 2s";
+            ans[i].style.animation = "fadeOut 1s";
 
         }
+        setTimeout(()=>{
         for (let i = 0 ;i < ans.length;i++){
             ans[i].style.display = "none";
-
         }
         next(pg+1);
-
-        
+        },400);
     },false);
 }
 
 
 function result(){/*총합 점수에 알맞은 동물을 화면에 결과로 보여주는 함수*/
-    const resultN = document.querySelector("#resultName");
-    const src = document.querySelector("#src");
     
     var num;
     var biggest = 0;
@@ -77,7 +86,6 @@ function result(){/*총합 점수에 알맞은 동물을 화면에 결과로 보
         if(score >= biggest) biggest = score;
     }
     num = resultAnimal(biggest); 
-    const resultImg = document.querySelector("#resultImg");
     var classImg = document.createElement('img');
     var imgURL = "img/" + resultList[num].nameP;
     classImg.src = imgURL;
@@ -88,8 +96,17 @@ function result(){/*총합 점수에 알맞은 동물을 화면에 결과로 보
     var animalA = resultList[num].about;
     resultN.innerHTML += "<br>" + animalN+"<br>"+animalA;
     src.innerHTML = resultList[num].src;
-    qna.style.display = "none";
-    res.style.display = "block";
+    qna.style.WebKitAnimation = "fadeOut 0.5s";
+    qna.style.animation = "fadeOut 0.5s";
+    setTimeout(() => {
+        res.style.WebKitAnimation = "fadeIn 0.5s";
+        res.style.animation = "fadeIn 0.5s";
+        setTimeout(() => {
+            qna.style.display = "none";
+            res.style.display = "block";
+        });
+    },250);
+    
 }
 
 function whatAnimal(pg,idx){

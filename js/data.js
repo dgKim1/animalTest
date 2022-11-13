@@ -36,7 +36,7 @@ const qnaList = [
 
 const resultList = [
      {animal: '<동물들의 왕 사자>',
-      about: ' 당신은 매우 독립적이며 사람들을 주도적으로 이끄는 것을 좋아하며 리더쉽이 강한 사람입니다.',
+      about: '당신은 매우 독립적이며 사람들을 주도적으로 이끄는 것을 좋아하며 리더쉽이 강한 사람입니다.',
       nameP: 'lion.png',
       src: '<a href="https://kr.freepik.com/free-vector/_23104906.htm#query=%EC%82%AC%EC%9E%90%20%EC%BA%90%EB%A6%AD%ED%84%B0&position=6&from_view=search&track=sph">작가 catalyststuff</a> 출처 Freepik'
      }
