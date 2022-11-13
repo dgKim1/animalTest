@@ -43,6 +43,8 @@ function next(pg) {
     for (let i in qnaList[pg].a) {
         addA(i, qnaList[pg].a[i],pg);
     }
+    var status = document.querySelector(".statusBar");
+    status.style.width = (100/qnaList.length)*(pg+1)+"%";
 }
 
 function addA(idx, ansText,pg) {
